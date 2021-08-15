@@ -11,20 +11,32 @@
     font-family: 'Kanit', sans-serif;
 }
 .nav .nav-item:hover .nav-link{
-    color: red !important;
+    color: black !important;
 }
 .container{
     height: 70px;
     margin-left:-10px; 
 }
+.container a{
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+}
 .name{
     margin-left: 100px;
-    margin-top: -30px;
+    margin-top: -40px;
+    font-size: 30px;
+    text-decoration: none;
+    
+}
+.name:hover{
+    color: darkslategray;
 }
 #name_ref{
     text-decoration: none;
-    color: black;
-    font-family: 'Caveat', cursive;
+    color: red;
+    font-family:'Kaushan Script',cursive;
+
 }
 .image{
     width:40px;
