@@ -4,24 +4,24 @@
 
 {% load static %}
 
-<img src="{% static 'portfolio/DSC01412.jpg' %}" id="my_image"><br>
+<img src="{% static 'portfolio/DSC01412.JPG' %}" id="my_image"><br>
 <div class="head_container">
 <h1 class="head">Jibby Jibran is Commander-in-Chief at ZappyCode and lives in downtown Tokyo</h1>
 </div>
-{% for project in projects%}
-
-
 <h3 class="portfolio">Portfolio</h3>
+
 <div class="flex-container">
-   
+    {% for project in projects%}
+
     <div>
         {% if project.url%}
         <a href="{{ project.url}}"><img src="{{ project.image.url}}" width="370px" height="220px"></a>
         {% endif %}
-        
+
         <h3 class="flex-text">{{project.title}}</h3>
         <p class="flex-paragraph">{{project.description}}</p>
-        {% endfor %}
+
     </div>
-    
+    {% endfor %}
+
 {% endblock %}
